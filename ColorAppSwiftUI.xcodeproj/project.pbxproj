@@ -39,7 +39,6 @@
 		8B18A8B528C52A7A002C268E = {
 			isa = PBXGroup;
 			children = (
-				8B18A8D128CA7925002C268E /* ColorView.swift */,
 				8B18A8C028C52A7A002C268E /* ColorAppSwiftUI */,
 				8B18A8BF28C52A7A002C268E /* Products */,
 			);
@@ -58,6 +57,7 @@
 			children = (
 				8B18A8C128C52A7A002C268E /* ColorAppSwiftUIApp.swift */,
 				8B18A8C328C52A7A002C268E /* ContentView.swift */,
+				8B18A8D128CA7925002C268E /* ColorView.swift */,
 				8B18A8CF28C52D6D002C268E /* ColorSliderView.swift */,
 				8B18A8C528C52A7F002C268E /* Assets.xcassets */,
 				8B18A8C728C52A7F002C268E /* Preview Content */,

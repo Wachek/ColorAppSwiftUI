@@ -8,9 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    
+    
     var body: some View {
         Text("Hello, world!")
             .padding()
+        
+        
+        
+//        private func checkValue() {
+//            if let value = Double(textValue) {
+//                sliderValue = value
+//            } else {
+//                
+//            }
     }
 }
 
