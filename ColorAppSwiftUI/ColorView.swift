@@ -15,7 +15,7 @@ struct ColorView: View {
             .frame(height: 150)
             .cornerRadius(30)
             .overlay(RoundedRectangle(cornerRadius: 30)
-                .stroke(Color.blue, lineWidth: 5)
+                .stroke(Color.white, lineWidth: 5)
             )
             .padding()
     }
