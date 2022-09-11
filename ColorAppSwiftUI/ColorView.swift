@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ColorView: View {
-    let color: CGColor
+    let color: Color
     
     var body: some View {
-        Color(color)
+        color
             .frame(height: 150)
             .cornerRadius(30)
             .overlay(RoundedRectangle(cornerRadius: 30)
@@ -23,6 +23,6 @@ struct ColorView: View {
 
 struct ColorView_Previews: PreviewProvider {
     static var previews: some View {
-        ColorView(color: CGColor(red: 255, green: 165, blue: 0, alpha: 1))
+        ColorView(color: Color(red: 255, green: 0, blue: 100))
     }
 }

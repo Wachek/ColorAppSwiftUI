@@ -19,7 +19,7 @@ struct ColorSliderView: View {
         HStack {
             Text("\(lround(sliderValue))")
                 .frame(width: 50)
-            Slider(value: $sliderValue, in: 1...255, step: 1)
+            Slider(value: $sliderValue, in: 0...255, step: 1)
                 .accentColor(color)
             TextField("\(lround(sliderValue))", text: $textValue)
                 .textFieldStyle(.roundedBorder)
