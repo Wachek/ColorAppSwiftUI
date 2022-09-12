@@ -8,13 +8,10 @@
 import SwiftUI
 
 struct ColorSliderView: View {
-//    @State private var sliderValue = 15.0
-//    @State private var textValue = ""
     let color: Color
-//    let action: () -> Void
     @Binding var sliderValue: Double
     @Binding var textValue: String
-
+    
     var body: some View {
         HStack {
             Text("\(lround(sliderValue))")
@@ -25,26 +22,10 @@ struct ColorSliderView: View {
                 .textFieldStyle(.roundedBorder)
                 .frame(width: 50)
                 .keyboardType(.numberPad)
-            
         }
         .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
-//        .toolbar {
-//            ToolbarItem(placement: .keyboard) {
-//                Button(action: action) {
-//                    Text("Done")
-//                }
-                //                        Button("Done") {
-                //                        action
-                //                        }
-            }
-
-        }
-        
-
-        
-    
-
-
+    }
+}
 
 struct ColorSliderView_Previews: PreviewProvider {
     static var previews: some View {

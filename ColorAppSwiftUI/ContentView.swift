@@ -46,9 +46,12 @@ struct ContentView: View {
                 Text("Enter number")
             }
         }
+        .onTapGesture {
+            hideKeyboard()
+        }
     }
-        
-    func check() {
+    
+    private func check() {
         if let newRedValue = Double(inputRedValue), newRedValue >= 0, newRedValue <= 255 {
             redValue = newRedValue
             inputRedValue = ""
@@ -69,6 +72,11 @@ struct ContentView: View {
                 }
             }
         }
+    }
+    
+    private func hideKeyboard() {
+        let resign = #selector(UIResponder.resignFirstResponder)
+        UIApplication.shared.sendAction(resign, to: nil, from: nil, for: nil)
     }
 }
 
