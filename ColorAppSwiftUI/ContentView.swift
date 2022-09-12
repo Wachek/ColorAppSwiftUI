@@ -34,7 +34,7 @@ struct ContentView: View {
             .toolbar {
                 ToolbarItem(placement: .keyboard) {
                     Button {
-                        check()
+                        checkValue()
                     } label: {
                         Text("Done")
                     }
@@ -51,7 +51,7 @@ struct ContentView: View {
         }
     }
     
-    private func check() {
+    private func checkValue() {
         if let newRedValue = Double(inputRedValue), newRedValue >= 0, newRedValue <= 255 {
             redValue = newRedValue
             inputRedValue = ""
