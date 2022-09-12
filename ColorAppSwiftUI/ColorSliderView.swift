@@ -11,7 +11,7 @@ struct ColorSliderView: View {
 //    @State private var sliderValue = 15.0
 //    @State private var textValue = ""
     let color: Color
-    let action: () -> Void
+//    let action: () -> Void
     @Binding var sliderValue: Double
     @Binding var textValue: String
 
@@ -25,26 +25,29 @@ struct ColorSliderView: View {
                 .textFieldStyle(.roundedBorder)
                 .frame(width: 50)
                 .keyboardType(.numberPad)
-                .toolbar {
-                    ToolbarItem(placement: .keyboard) {
-                        Button(action: action) {
-                        Text("Done")
-                        }
-//                        Button("Done") {
-//                        action
-//                        }
-                    }
-                }
+            
+        }
+        .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
+//        .toolbar {
+//            ToolbarItem(placement: .keyboard) {
+//                Button(action: action) {
+//                    Text("Done")
+//                }
+                //                        Button("Done") {
+                //                        action
+                //                        }
+            }
+
         }
         
-        .padding()
-                
-        }
-    }
+
+        
+    
+
 
 
 struct ColorSliderView_Previews: PreviewProvider {
     static var previews: some View {
-        ColorSliderView(color: Color.red,action: {}, sliderValue: .constant(15.0), textValue: .constant(""))
+        ColorSliderView(color: Color.red, sliderValue: .constant(15.0), textValue: .constant(""))
     }
 }
